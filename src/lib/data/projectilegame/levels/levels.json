@@ -1,0 +1,127 @@
+{
+    "levels": [
+        {
+            "name": "Tutorial",
+            "tiles": [
+                ["normal#4", "normal#5", "normal#6", "normal#7", "normal#8"],
+                ["normal#3", "points#100", "points#300", "points#100", "normal#9"],
+                ["normal#2", "points#200", "hard#5", "points#200", "normal#10"],
+                ["normal#1", "hard#5", "goal", "hard#5", "normal#11"],
+                ["normal#0", "solid", "solid", "solid", "life#2"]
+            ],
+            "properties": {
+                "startPoint": { "x": 96, "y": 300 },
+                "tileOffset": { "x": 275, "y": 312 }
+            },
+            "appearance": {
+                "background": {
+                    "type": "linear",
+                    "start": { "x": 0, "y": 0 },
+                    "end": { "x": 0, "y": 600 },
+                    "stops": [
+                        { "offset": 0, "color": "#CFEFFF" },
+                        { "offset": 1, "color": "#E8F8FF" }
+                    ]
+                }
+            }
+        }, {
+            "name": "Level 1",
+            "tiles": [
+                ["normal#0", "normal#1", "normal#2", "normal#3", "normal#4", "normal#5", "normal#6", "normal#7", "normal#8", "normal#9", "normal#10", "life#3"],
+                ["normal#1", "normal#2", "normal#3", "normal#4", "normal#5", "normal#6", "normal#7", "normal#8", "normal#9", "normal#10", "normal#11", "points#1000"],
+                ["normal#2", "normal#3", "normal#4", "normal#5", "normal#6", "normal#7", "normal#8", "normal#9", "normal#10", "normal#11", "normal#0", "points#900"],
+                ["normal#3", "normal#4", "normal#5", "normal#6", "normal#7", "normal#8", "normal#9", "normal#10", "normal#11", "normal#0", "normal#1", "points#800"],
+                ["normal#4", "normal#5", "normal#6", "normal#7", "normal#8", "normal#9", "normal#10", "normal#11", "normal#0", "normal#1", "normal#2", "points#700"],
+                ["normal#5", "normal#6", "normal#7", "normal#8", "normal#9", "normal#10", "normal#11", "normal#0", "normal#1", "normal#2", "normal#3", "points#600"],
+                ["hard#2", "normal#7", "normal#8", "normal#9", "normal#10", "normal#11", "normal#0", "normal#1", "normal#2", "normal#3", "normal#4", "points#500"],
+                ["hard#3", "hard#2", "normal#9", "normal#10", "normal#11", "normal#0", "normal#1", "normal#2", "normal#3", "normal#4", "normal#5", "points#400"],
+                ["spring#2", "hard#4", "hard#2", "normal#11", "normal#0", "normal#1", "normal#2", "normal#3", "normal#4", "normal#5", "normal#6", "points#300"],
+                ["solid", "hard#6", "hard#4", "hard#2", "normal#1", "normal#2", "normal#3", "normal#4", "normal#5", "normal#6", "normal#7", "points#200"],
+                ["solid", "goal", "hard#6", "hard#4", "hard#2", "normal#3", "normal#4", "normal#5", "normal#6", "normal#7", "normal#8", "points#100"],
+                ["solid", "solid", "solid", "spring#2", "bounce#3", "bounce#3", "bounce#3", "kill", "kill", "kill", "kill", "kill"]
+            ],
+            "properties": {
+                "startPoint": { "x": 96, "y": 300 },
+                "tileOffset": { "x": 200, "y": 24 }
+            },
+            "appearance": {
+                "background": {
+                    "type": "linear",
+                    "start": { "x": 0, "y": 0 },
+                    "end": { "x": 800, "y": 0 },
+                    "stops": [
+                        { "offset": 0, "color": "#6FA8FF" },
+                        { "offset": 1, "color": "#F838FF" }
+                    ]
+                }
+            }
+        }, {
+            "name": "Final",
+            "tiles": [
+                ["solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid"],
+                ["normal#0", "normal#0", "normal#0", "normal#0", "normal#0", "normal#0", "kill", null, "kill", "normal#0", "normal#0", "normal#0", "normal#0", "normal#0", "normal#0"],
+                ["normal#1", "normal#1", "normal#1", "normal#1", "normal#1", "normal#1", "kill", "hard#1", "kill", "normal#1", "normal#1", "normal#1", "normal#1", "normal#1", "normal#1"],
+                ["normal#2", "normal#2", "normal#2", "normal#2", "normal#2", "normal#2", "kill", "hard#2", "kill", "normal#2", "normal#2", "normal#2", "normal#2", "normal#2", "normal#2"],
+                ["normal#3", "normal#3", "normal#3", "normal#3", "normal#3", "normal#3", "kill", "hard#3", "kill", "normal#3", "normal#3", "normal#3", "normal#3", "normal#3", "normal#3"],
+                ["normal#4", "normal#4", "normal#4", "normal#4", "normal#4", "normal#4", "kill", "hard#4", "kill", "normal#4", "normal#4", "normal#4", "normal#4", "normal#4", "normal#4"],
+                ["normal#5", "normal#5", "normal#5", "normal#5", "normal#5", "normal#5", "kill", "hard#5", "kill", "normal#5", "normal#5", "normal#5", "normal#5", "normal#5", "normal#5"],
+                ["normal#6", "normal#6", "normal#6", "normal#6", "normal#6", "normal#6", "kill", "hard#6", "kill", "normal#6", "normal#6", "normal#6", "normal#6", "normal#6", "normal#6"],
+                ["normal#7", "normal#7", "normal#7", "normal#7", "normal#7", "normal#7", "kill", "hard#7", "kill", "normal#7", "normal#7", "normal#7", "normal#7", "normal#7", "normal#7"],
+                ["normal#8", "normal#8", "normal#8", "normal#8", "normal#8", "normal#8", "kill", "hard#8", "kill", "normal#8", "normal#8", "normal#8", "normal#8", "normal#8", "normal#8"],
+                ["normal#9", "normal#9", "normal#9", "normal#9", "normal#9", "normal#9", "kill", "hard#9", "kill", "normal#9", "normal#9", "normal#9", "normal#9", "normal#9", "normal#9"],
+                ["normal#10", "normal#10", "normal#10", "normal#10", "normal#10", "normal#10", "kill", "hard#10", "kill", "normal#10", "normal#10", "normal#10", "normal#10", "normal#10", "normal#10"],
+                ["normal#11", "normal#11", "normal#11", "normal#11", "normal#11", "normal#11", "solid", "goal", "solid", "normal#11", "normal#11", "normal#11", "normal#11", "normal#11", "normal#11"],
+                ["solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid", "solid"]
+            ],
+            "properties": {
+                "startPoint": { "x": 400, "y": 36 },
+                "tileOffset": { "x": 40, "y": -36 }
+            },
+            "appearance": {
+                "background": {
+                    "type": "linear",
+                    "start": { "x": 0, "y": 0 },
+                    "end": { "x": 0, "y": 600 },
+                    "stops": [
+                        { "offset": 0, "color": "#7F7F7F" },
+                        { "offset": 1, "color": "#3F0000" }
+                    ]
+                },
+                "foreground": {
+                    "type": "linear",
+                    "start": { "x": 0, "y": 450 },
+                    "end": { "x": 0, "y": 600 },
+                    "stops": [
+                        { "offset": 0, "color": "transparent" },
+                        { "offset": 1, "color": "#0000007F" }
+                    ]
+                }
+            }
+        }, {
+            "name": "Thank You For Playing!",
+            "data": ["10xParticles"],
+            "tiles": [
+                ["goal", "goal", "goal", null, "goal",  null,  "goal", null, "goal",  null,  "goal", null, "goal"],
+                [ null,  "goal",  null,  null, "goal",  null,  "goal", null, "goal",  null,  "goal", null, "goal"],
+                [ null,  "goal",  null,  null, "goal", "goal", "goal", null,  null,  "goal",  null,  null, "goal"],
+                [ null,  "goal",  null,  null, "goal",  null,  "goal", null, "goal",  null,  "goal", null,  null ],
+                [ null,  "goal",  null,  null, "goal",  null,  "goal", null, "goal",  null,  "goal", null, "goal"]
+            ],
+            "properties": {
+                "startPoint": { "x": 400, "y": 10 },
+                "tileOffset": { "x": 88,  "y": 156 }
+            },
+            "appearance": {
+                "background": {
+                    "type": "linear",
+                    "start": { "x": 0, "y": 0 },
+                    "end": { "x": 0, "y": 600 },
+                    "stops": [
+                        { "offset": 0, "color": "#BFFFE0" },
+                        { "offset": 1, "color": "#E0FFF0" }
+                    ]
+                }
+            }
+        }
+    ]
+}

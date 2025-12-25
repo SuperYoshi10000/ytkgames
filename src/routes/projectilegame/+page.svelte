@@ -1,7 +1,6 @@
 <script lang="ts">
     import * as Physics from "$lib/physics";
     import ProjectileGame, { type IMAGE_KEY, type LevelList } from "$lib/projectilegame";
-    import { onMount } from "svelte";
 
     import Levels from "$lib/data/projectilegame/levels/levels.json";
     
